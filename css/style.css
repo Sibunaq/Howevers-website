@@ -83,14 +83,14 @@ body {
 }
 
 .content-box {
-    background: rgba(255, 255, 255, 0.9); /* Slightly opaque white background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    margin-bottom: 50px; /* Add space below the box */
-    position: relative; /* Ensure it appears over the background */
-    z-index: 2; /* Higher than the background */
+    // ...existing code...
+    min-height: 300px; /* Add minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px; /* Add some space from the top */
+    margin-bottom: 100px; /* Increase space at bottom to prevent footer overlap */
+    padding: 70px; /* Increase padding for more internal space */
 }
 
 .content-box p {
@@ -218,12 +218,13 @@ body {
 /* Footer Styles */
 .footer {
     background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(40px);
     padding: 1rem;
     text-align: center;
+    position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;  /* Updated width to 98% */
+    width: 100%;
     font-size: 0.8rem;
     color: #666;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
@@ -240,3 +241,9 @@ body {
     color: #0056b3;
 }
 
+.footer .disclaimer {
+    margin-top: 8px;
+    font-style: italic;
+    color: #888;
+    font-size: 0.75rem;
+}

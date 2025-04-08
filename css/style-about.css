@@ -1,0 +1,143 @@
+/* Add to the existing footer styles */
+.footer .disclaimer {
+    margin-top: 8px;
+    font-style: italic;
+    color: #888;
+    font-size: 0.75rem;
+}
+/* About Us Page Styles */
+.a-main-content {
+    max-width: 1200px;
+    margin: 80px auto 60px;
+    padding: 20px;
+    min-height: calc(100vh - 140px);
+}
+
+.a-about-box {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.a-intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.a-intro-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.a-intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.a-about-section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.a-about-section h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.a-about-section p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.a-about-section ul {
+    margin: 15px 0;
+    padding-left: 40px;
+}
+
+.a-about-section li {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Values Grid */
+.a-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.a-value-item {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.a-value-item:hover {
+    transform: translateY(-5px);
+}
+
+.a-value-item i {
+    font-size: 2rem;
+    color: #2196F3;
+    margin-bottom: 15px;
+}
+
+.a-value-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.a-features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.a-features-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.a-features-list li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .a-about-box {
+        padding: 20px;
+    }
+
+    .a-intro-section h1 {
+        font-size: 2rem;
+    }
+
+    .a-about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .a-value-item {
+        padding: 15px;
+    }
+
+    .a-values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

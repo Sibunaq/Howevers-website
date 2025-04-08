@@ -1,0 +1,170 @@
+/* Add to the existing footer styles */
+.footer .disclaimer {
+    margin-top: 8px;
+    font-style: italic;
+    color: #888;
+    font-size: 0.75rem;
+}
+/* Terms of Use Styles */
+.t-main-content {
+    max-width: 1200px;
+    margin: 80px auto 60px;
+    padding: 20px;
+    min-height: calc(100vh - 140px);
+}
+
+.t-terms-box {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 40px;
+    margin-top: 40px;
+}
+
+/* Introduction Section */
+.t-intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.t-intro-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.t-intro-text {
+    color: #666;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Terms Content */
+.t-terms-content {
+    margin-top: 40px;
+}
+
+.t-terms-section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.t-terms-section h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.t-terms-section p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Lists */
+.t-terms-section ul,
+.t-terms-section ol {
+    margin: 15px 0;
+    padding-left: 40px;
+}
+
+.t-terms-section li {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Important Notes */
+.t-important-note {
+    background: #f8f9fa;
+    border-left: 4px solid #2196F3;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Links */
+.t-terms-link {
+    color: #2196F3;
+    text-decoration: none;
+    border-bottom: 1px dotted #2196F3;
+    transition: all 0.3s ease;
+}
+
+.t-terms-link:hover {
+    color: #1976D2;
+    border-bottom-style: solid;
+}
+
+/* Last Updated */
+.t-last-updated {
+    text-align: right;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    font-style: italic;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
+
+@media (prefers-contrast: high) {
+    .t-terms-box {
+        background: white;
+        color: black;
+    }
+    
+    .t-terms-link {
+        color: blue;
+        text-decoration: underline;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .t-terms-box {
+        padding: 20px;
+    }
+
+    .t-intro-section h1 {
+        font-size: 2rem;
+    }
+
+    .t-terms-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .t-intro-text,
+    .t-terms-section p,
+    .t-terms-section li {
+        font-size: 1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .t-terms-box {
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .glass-nav,
+    .footer {
+        display: none;
+    }
+}

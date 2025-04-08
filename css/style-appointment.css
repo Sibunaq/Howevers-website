@@ -1,3 +1,10 @@
+/* Add to the existing footer styles */
+.footer .disclaimer {
+    margin-top: 8px;
+    font-style: italic;
+    color: #888;
+    font-size: 0.75rem;
+}
 /* Reset and base styles */
 * {
     margin: 0;
