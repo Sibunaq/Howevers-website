@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="../css/style-appointment.css">
+</head>
+<body>
+    <header>
+        <nav class="glass-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="pages/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="info-section">
+            <h1>BOOK APPOINTMENT</h1>
+            <p>
+                Schedule a tour of one of our studios.
+                Get instant answers to all your questions.
+                Book a free consultation with one of our experts.
+                We will contact you to confirm your appointment.
+            </p>
+        </section>
+
+        <section class="form-section">
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="vorname">First Name (required)</label>
+                    <input type="text" id="vorname" name="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="nachname">Last Name (required)</label>
+                    <input type="text" id="nachname" name="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email (required)</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message (optional)</label>
+                    <input type="text" id="message" name="message" placeholder="Please enter your message here">
+                </div>
+                <div class="form-group">
+                    <label for="appointment">Appointment Type (required)</label>
+                    <input type="text" id="appointment" name="appointment" list="appointmentTypes" placeholder="Select or type an appointment type" required>
+                    <datalist id="appointmentTypes">
+                        <option value="Studio Tour">
+                        <option value="Consultation">
+                        <option value="Other">
+                    </datalist>
+                </div>
+                <div class="form-group">
+                    <label for="datum">Date (optional)</label>
+                    <input type="date" id="datum" name="date" placeholder="YYYY-MM-DD">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Howevers. All rights reserved. | 
+            <a href="legal-notice.html">Legal Notice</a> | 
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Use</a>
+        </p>
+    </footer>
+</body>
+</html>
