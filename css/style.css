@@ -83,7 +83,6 @@ body {
 }
 
 .content-box {
-    // ...existing code...
     min-height: 300px; /* Add minimum height */
     display: flex;
     flex-direction: column;
