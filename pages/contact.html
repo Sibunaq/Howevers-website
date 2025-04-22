@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Howevers</title>
+    
+    <!-- Stylesheet links -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-contact.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <nav class="glass-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="c-main-content">
+        <!-- Contact Form Container -->
+        <div class="c-contact-container">
+            <!-- Introduction Section -->
+            <section class="c-intro-section">
+                <h1>Get in Touch</h1>
+                <p>We'd love to hear from you! Whether you have a question, suggestion, or just want to say hello, please get in touch.</p>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section class="c-form-section">
+                <form class="c-contact-form">
+                    <!-- Name Input Field -->
+                    <div class="c-form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <!-- Email Input Field -->
+                    <div class="c-form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <!-- Subject Dropdown -->
+                    <div class="c-form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a reason</option>
+                            <option value="other">Other</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Product Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+
+                    <!-- Message Text Area -->
+                    <div class="c-form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="c-submit-btn">Send Message</button>
+                </form>
+            </section>
+
+            <!-- Additional Information Section -->
+            <section class="c-info-section">
+                <!-- Contact Information -->
+                <div class="c-contact-info">
+                    <h2>Contact Information</h2>
+                    <p class="c-info-text">Our team is currently working remotely. Contact details will be available soon.</p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="c-social-links">
+                    <h3>Follow Us</h3>
+                    <div class="c-social-icons">
+                        <!-- Social Media Icons -->
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Copyright and Legal Links -->
+        <p>© 2024 Howevers. All rights reserved. | 
+            <a href="legal.html">Legal Notice</a> | 
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Use</a>
+        </p>
+        <!-- Project Disclaimer -->
+        <p class="disclaimer">This website is a project demonstration and does not represent a real company.</p>
+    </footer>
+</body>
+</html>

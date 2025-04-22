@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Howevers</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <!-- Add basket container -->
+    <div class="basket-container">
+        <button class="basket-button">
+            <span class="basket-icon">🛒</span>
+            <span class="basket-count">0</span>
+        </button>
+        <div class="basket-menu hidden">
+            <div class="basket-header">
+                <h3>Your Cart</h3>
+                <button class="close-basket">×</button>
+            </div>
+            <div class="basket-items">
+                <p class="empty-basket">Your cart is empty</p>
+                <!-- Items will be dynamically added here -->
+            </div>
+            <div class="basket-footer">
+                <div class="total">Total: €0.00</div>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="glass-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Next Favorite Product</h1>
+            <p>Free Shipping on Orders Over $50</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-item">
+            <i class="fas fa-laptop"></i>
+            <span>Electronics</span>
+        </div>
+        <div class="category-item">
+            <i class="fas fa-tshirt"></i>
+            <span>Fashion</span>
+        </div>
+        <div class="category-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="category-item">
+            <i class="fas fa-football-ball"></i>
+            <span>Sports</span>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="products">
+        <div class="product-grid">
+            <!-- Product cards will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Flash Sale Section -->
+    <section class="flash-sale">
+        <h2>Flash Sale Ends In: <span id="countdown">24:00:00</span></h2>
+        <div class="flash-sale-products">
+            <!-- Flash sale products will be dynamically added here -->
+            
+        </div>
+        <div class="sale-products">
+            <!-- Sale products will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-carousel">
+            <!-- Reviews will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Join Our Newsletter & Get 10% Off</h2>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Copyright and Legal Links -->
+        <p>© 2024 Howevers. All rights reserved. | 
+            <a href="legal.html">Legal Notice</a> | 
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Use</a>
+        </p>
+        <!-- Project Disclaimer -->
+        <p class="disclaimer">This website is a project demonstration and does not represent a real company.</p>
+    </footer>
+</body>
+</html>

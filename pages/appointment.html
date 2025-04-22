@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="../css/style-appointment.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <nav class="glass-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        <!-- Information Section -->
+        <section class="info-section">
+            <h1>BOOK APPOINTMENT</h1>
+            <!-- Service Description -->
+            <p>
+                Schedule a tour of one of our studios.
+                Get instant answers to all your questions.
+                Book a free consultation with one of our experts.
+                We will contact you to confirm your appointment.
+            </p>
+            <!-- Availability Notice -->
+            <p><br> At the APPOINTMENT is not fully functional and will be available soon. We will keep you updated. We hope for your understanding.<br></p>
+        </section>
+
+        <!-- Appointment Form Section -->
+        <section class="form-section">
+            <form id="appointment-form">
+                <!-- First Name Input -->
+                <div class="form-group">
+                    <label for="vorname">First Name (required)</label>
+                    <input type="text" id="vorname" name="firstname" required>
+                </div>
+
+                <!-- Last Name Input -->
+                <div class="form-group">
+                    <label for="nachname">Last Name (required)</label>
+                    <input type="text" id="nachname" name="lastname" required>
+                </div>
+
+                <!-- Email Input -->
+                <div class="form-group">
+                    <label for="email">Email (required)</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Message Input -->
+                <div class="form-group">
+                    <label for="message">Message (optional)</label>
+                    <input type="text" id="message" name="message" placeholder="Please enter your message here">
+                </div>
+
+                <!-- Appointment Type Selection -->
+                <div class="form-group">
+                    <label for="appointment">Appointment Type (required)</label>
+                    <input type="text" id="appointment" name="appointment" list="appointmentTypes" 
+                           placeholder="Select or type an appointment type" required>
+                    <!-- Appointment Type Options -->
+                    <datalist id="appointmentTypes">
+                        <option value="Studio Tour">
+                        <option value="Consultation">
+                        <option value="Other">
+                    </datalist>
+                </div>
+
+                <!-- Date Selection -->
+                <div class="form-group">
+                    <label for="datum">Date (optional)</label>
+                    <input type="date" id="datum" name="date" placeholder="YYYY-MM-DD">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Copyright and Legal Links -->
+        <p>© 2024 Howevers. All rights reserved. | 
+            <a href="legal.html">Legal Notice</a> | 
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Use</a>
+        </p>
+        <!-- Project Disclaimer -->
+        <p class="disclaimer">This website is a project demonstration and does not represent a real company.</p>
+    </footer>
+</body>
+</html>
